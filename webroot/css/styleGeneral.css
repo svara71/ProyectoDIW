@@ -1,31 +1,39 @@
+body
+{
+    margin: 0 auto;
+   
+    background: url('../media/imagen/portada3.jpg') no-repeat center center fixed ;
+    background-size: cover;
 
-
-body{
-    margin: 0;
 }
 
-header{
-    position: fixed;
-    z-index: 1;
-
+header
+{
+    position: absolute;
+    z-index: 1; 
     width: 100%;
+    top:0;
+  
+   
     height: 60px;
 
     background-color: #fff;
+
 }
 
-header > div{
+header > div
+{
     display: flex;
 
-    min-width: 500px;
+   
     height: 40px;
     margin: 10px;
 
     justify-content: space-between;
-    
 }
 
-header > div h1{
+header > div h1
+{
     margin: 0;
     margin-left: 50px;
 }
@@ -33,6 +41,7 @@ header > div div
 {
     display: flex;
     flex-direction: column;
+
     width: 200px;
     height: 300px;
 }
@@ -41,48 +50,41 @@ header > div div a
 {
     margin-left: 100px;
 }
-  .boton02{
+.boton02
+{
     text-transform: uppercase;
- }
+}
 
-.boton{   
-    text-decoration: none;
+.boton
+{
     width: 50px;
     height: 50px;
-    color:#FFF;
-   
+
     text-align: center;
-  
-   
+    text-decoration: none;
+
+    color: #fff;
 }
 
 
-#contenido{
-    display: flex;
+
+
+footer
+{
+    position: relative;
+    bottom: 0 ;
 
     width: 100%;
-    height: 1250px;
+    height: 150px;
 
-    background: url('../imagen/portada3.jpg') no-repeat fixed center ;
-    background-size: cover;
+    background: url('../media/imagen/black.png') repeat-x;
 }
-
-footer{
-    position: absolute;
-    top: 1250px;
-
-    width: 100%;
-    height: 100px;
-
-    background-color: #fff;
-}
-p,span{
+p,
+span
+{
     font-family: 'robotoregular';
 }
-h1{ 
+h1
+{
     font-family: 'robotobold';
-  
-}
-@media screen and (max-width: 700px){
-   
 }

@@ -29,6 +29,7 @@
 				 	
 				});			   
 	
+	
 				$('#botonSesion').on('click',function(){
 				      $('#sesion').toggle();
 				   });	
@@ -36,5 +37,15 @@
 				      $('#sesion').hide();
 				   });	
 
+				
 
+			document.getElementById('check').onclick = function() {
+			    // access properties using this keyword
+			    if ( this.checked ) {
+			        // if checked ...
+			       		
+			    } else {
+			        // if not checked ...
+			    }
+			};
  });

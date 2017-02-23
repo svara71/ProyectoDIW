@@ -1,0 +1,156 @@
+#contenido
+{
+    display: flex;
+
+    width: 100%;
+    height: 1250px;
+}
+#sesion
+{
+    display: none;
+    flex-direction: column;
+
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    
+
+    border-radius: 5px;
+    background-color: #fff;
+}
+#sesion form
+{
+    margin-top: 10px;
+    margin-left: 40px;
+}
+#sesion input
+{
+    margin-bottom: 20px;
+}
+#sesion a
+{
+    margin-bottom: 0;
+    margin-left: 35px;
+}
+
+#recordar{
+    display:flex;
+    flex-direction: row;
+    height: 40px;
+    width: 110px;
+}
+#recordar>span{
+    font-size: 15px;
+}
+.boton02
+{
+    padding: 10px;
+
+    text-decoration: none;
+
+    color: #fff;
+    border-radius: 10px;
+    background-color: #a8f0a8;
+   
+}
+.boton02 span
+{
+    display: inline-block;
+}
+
+@-webkit-keyframes greenPulse
+{
+    from
+    {
+        background-color: #749a02;
+        -webkit-box-shadow: 0 0 9px #333;
+    }
+    50%
+    {
+        background-color: #91bd09;
+        -webkit-box-shadow: 0 0 18px #91bd09;
+    }
+    to
+    {
+        background-color: #749a02;
+        -webkit-box-shadow: 0 0 9px #333;
+    }
+}
+
+#registro .boton02
+{
+    -webkit-animation-name: greenPulse;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+}
+input
+{
+    width: 120px;
+    height: 20px;
+}
+
+
+#registro
+{
+    position: absolute;
+    top: 300px;
+    right: 20%;
+
+    width: 300px;
+    height: 300px;
+
+    text-align: center;
+}
+
+#carrusel
+{
+    position: absolute;
+    top: 700px;
+    left: 50%;
+
+    width: 600px;
+    height: 400px;
+
+    transform: translateX(-50%);
+}
+
+.box
+{
+    height: 300px;
+    margin: 35px 35px 0 35px;
+
+    background: blue;
+}
+
+@media screen and (max-width: 700px)
+{
+    #carrusel
+    {
+        width: 450px;
+        height: 600px;
+    }
+    .box
+    {
+        height: 400px;
+    }
+}
+@media screen and (max-device-height: 800px)
+{
+    #carrusel
+    {
+        width: 350px;
+        height: 600px;
+    }
+    .box
+    {
+        height: 400px;
+    }
+    #registro{
+        width: 200px;
+        right: 22%;
+
+    }
+    #sesion{
+       margin-right: 10px;
+    }
+}

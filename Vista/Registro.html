@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Samuel Vara Garcia" />
+	<meta name="generator" content="Notepad++" />
+	<link rel="stylesheet" type="text/css" href="../webroot/js/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../webroot/js/slick/slick-theme.css"/>
+	<meta name="viewport" content="width=device-width">
+    <script type="text/javascript" src="../webroot/js/jQuery/jquery-1.7.js"></script>
+	<script type="text/javascript" src="../webroot/js/jQuery/jquery-1.7.min.js"></script>
+	<script type="text/javascript" src="../webroot/js/slick/slick.min.js"></script>
+	<script type="text/javascript" src="../webroot/js/jQueryRegistro.js"></script>
+	<script type="text/javascript" src="../webroot/js/jQueryValidacion.js"></script>
+	<script type="text/javascript" src="../webroot/js/jQueryUI/jquery-ui.js"></script>
+	<link rel="stylesheet" href="../webroot/js/jQueryUI/jquery-ui.css">
+	<link rel="stylesheet" href="../webroot/css/font/roboto_bold_macroman/stylesheet.css">
+	<link rel="stylesheet" href="../webroot/css/font/roboto_regular_macroman/stylesheet.css">
+	<!--<link rel="stylesheet" href="../webroot/font/icoUser/style.css">-->
+	<link rel="stylesheet" href="../webroot/css/styleGeneral.css">
+	<link rel="stylesheet" href="../webroot/css/styleRegistro.css">
+	<title>Inicio</title>
+</head>
+<body>
+	<header>
+		<div>
+			<h1>Titulo</h1>
+			
+		</div>
+	</header>
+
+	<h1>Registro</h1>
+		<div id="contenido">
+			<div id="formulario">
+
+				<form  action="#" onsubmit="return validacion()">
+				<div>
+					<div class="campo">	<span>Nombre</span><br/>
+					<input type="text" id="nombre" placeholder="Nombre" ></div>
+
+					<div class="campo">	<span>Apellido</span><br/>
+					<input type="text" id="apellido" placeholder="Apellidos" ></div>
+
+					<div class="campo">	<span>Usuario</span><br/>
+					<input type="text" id="user" placeholder="Usuario" ></div>
+
+					<div class="campo">	<span>Email</span><br/>
+					<input type="email" id="email" placeholder="Email" ></div>
+
+					<div class="campo">	<span>Contrase&ntilde;a</span><br/>
+					<input type="password" id="pass" placeholder="Contrase&ntilde;a" ></div>
+
+					<div class="campo">	<span>Estatura</span><br/>
+					<input type="text" id="estatura" placeholder="Estatura" ></div>
+
+					<div class="campo">	<span>Peso</span><br/>
+					<input type="text" id="peso" placeholder="Peso" ></div>
+
+					<div class="campo">	<span>Fecha de Nacimiento</span><br/>
+					<input type="date" id="fechaNa" placeholder="Fecha de Nacimiento" ></div>
+				</div>
+				<div>
+				<div id="zonas">
+					<h2>Zonas Frecuencia Cardiaca</h2>
+					<div class="campo">	<span>Sprint</span><br/>
+					<input class="zonasRange"  id="sprint"	name="sprint" type ="range"  value="0"/>
+					</div>	
+					<div class="campo">	<span>Velocidad</span><br/>
+					<input class="zonasRange"  id="velocidad"	name="velocidad" type ="range" value="0"/>
+					</div>	
+					<div class="campo">	<span>Cardio</span><br/>
+					<input class="zonasRange" id="cardio"	name="cardio" type ="range"  value="0"/>
+					</div>	
+					<div class="campo">	<span>Fitness</span><br/>
+					<input class="zonasRange" id="fitness"	name="fitness" type ="range"  value="0"/>
+					</div>	
+					<div class="campo">	<span>Sencillo</span><br/>
+					<input class="zonasRange" id="sencillo"	name="sencillo" type ="range"  value="0"/>
+					</div>	
+				</div>	
+			</div>
+
+			<div>
+				<h2>Tipo de Corredor</h2>
+				<div id="accordion">
+				    
+				        <h3>Corredor Casual</h3>
+				        <div>
+				        </div>
+				    
+				    
+				        <h3>Corredor de medio fondo</h3>
+				        <div>
+				            <div><span>Mejor marca de 5km</span><input type="text" name=""></div>
+				           <div><span>Mejor marca de 10km</span><input type="text" name=""></div>
+				            <div><span>Mejor marca de Media Maraton</span><input type="text" name=""></div>
+				   		</div>
+				   		<h3>Corredor fondo</h3>
+				        <div>
+				            <div>Row</div>
+				            <div>Row</div>
+				            <div>Row</div>
+				        </div>
+				    
+				    
+				        <h3>Corredor de trail</h3>
+				        <div>
+				            <div>Row</div>
+				            <div>Row</div>
+				            <div>Row</div>
+				   		</div>
+				</div>
+			</div>
+			</form>
+			</div>
+
+		</div>
+		<footer>
+			<p>Documentacion</p>
+		</footer>
+</body>
+</html>
