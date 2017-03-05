@@ -1,0 +1,168 @@
+#contenido{
+	margin-top:100px;
+	display: flex;
+	flex-direction: column;
+}
+#contenido>div{
+	display: flex;
+	
+}
+#contenido>div:nth-child(1){
+	width: 100%;
+	height: 350px;
+	justify-content: center;
+}
+
+#contenido>div:nth-child(2){
+	width: 100%;
+	height: 500px;
+	justify-content: center;
+}
+#contenido>div:nth-child(3){
+	width: 100%;
+	height: 400px;
+	justify-content: center;
+}
+
+#calendario{
+	width: 800px;
+	height: 300px;
+	margin-top:25px;
+	
+	
+}
+#mapa{
+	width: 650px;
+	height: 450px;
+	margin:25px;
+}
+#datos{
+	width: 550px;
+	height: 450px;
+	background-color: #F6FFF9;
+	margin:25px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	
+}
+#grafico{
+	border:1px solid #000;
+}
+.box{
+	
+	height: 200px;
+	margin:20px 10px ;
+
+
+}
+#calendario > form{
+	background-color: #FFF;
+	border:1px solid #000;
+}
+.one-time02{
+	border:1px solid #000;
+	background-color: #FFF;
+}
+.box>img{
+	margin-left:40px;
+	margin-top:10px;
+	padding:5px;
+	background-color: #BBFCD3;
+}
+.box>div{
+	text-align: center;
+	margin-left:20px;
+}
+.box>div p{
+	background-color: #BBFCD3;
+	width: 150px;
+
+}
+.fecha{
+	margin-left: 20px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+#datos p{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin:35px ;
+
+	
+}
+.slick-prev:before,
+.slick-next:before
+{
+    color: green !important;
+
+}
+#datos p>span:nth-child(1){
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+#datos p>span:nth-child(2){
+	
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+
+}
+#datos p>span:nth-child(2) span{
+	
+	font-size: 10px;
+
+}
+@media screen and (max-width: 900px) {
+	#contenido>div:nth-child(2){
+		flex-direction: column-reverse;
+		height:900px;
+	}	
+	#grafico{
+		width: 90%;
+	}
+	#mapa{
+		width: 90%;
+		height: 650px;
+		background-color: pink;
+		margin:25px;
+	}
+	#datos{
+		width: 90%;
+		height: 550px;
+		
+		margin:25px;
+	}
+	#calendario{
+	width: 90%;
+	
+	}
+
+	
+#datos p{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin:20px ;
+
+	
+}
+
+}
+@media screen and (max-width: 400px) {
+	
+	#calendario{
+	width: 85%;
+	
+	}
+	.box{
+		margin-left:40px;
+	}
+
+
+}

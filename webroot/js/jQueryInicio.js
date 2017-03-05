@@ -43,7 +43,12 @@
 			    // access properties using this keyword
 			    if ( this.checked ) {
 			        // if checked ...
-			       		
+			       		var user = document.getElementById("user").value;
+						var pass = document.getElementById("pass").value;
+						/*Guardando los datos en el LocalStorage*/
+						localStorage.setItem("Usuario", user);
+						localStorage.setItem("Contraseña", pass);
+						
 			    } else {
 			        // if not checked ...
 			    }

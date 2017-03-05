@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?71ir37');
-  src:  url('fonts/icomoon.eot?71ir37#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?71ir37') format('truetype'),
-    url('fonts/icomoon.woff?71ir37') format('woff'),
-    url('fonts/icomoon.svg?71ir37#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?b6kpfc');
+  src:  url('fonts/icomoon.eot?b6kpfc#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?b6kpfc') format('truetype'),
+    url('fonts/icomoon.woff?b6kpfc') format('woff'),
+    url('fonts/icomoon.svg?b6kpfc#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,13 +24,98 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-user-circle-o:before {
+.icon-montanas:before {
+  font-size: 35px;
+  content: "\e902";
+}
+.icon-montana:before {
+font-size: 35px;
+  content: "\e903";
+}
+.icon-huellas-de-zapatos-humanos:before {
+font-size: 35px;
+  content: "\e904";
+}
+.icon-brisa:before {
+font-size: 35px;
+  content: "\e905";
+}
+.icon-flechas-1:before {
+font-size: 35px;
+  content: "\e906";
+}
+.icon-flechas:before {
+font-size: 35px;
+  content: "\e907";
+}
+.icon-medico-1:before {
+font-size: 35px;
+  content: "\e908";
+}
+.icon-medico:before {
+font-size: 35px;
+  content: "\e909";
+}
+.icon-fuego:before {
+font-size: 35px;
+  content: "\e90a";
+}
+.icon-distancia-para-viajar-entre-dos-puntos:before {
+font-size: 35px;
+  content: "\e90b";
+}
+.icon-temporizador:before {
+font-size: 35px;
+  content: "\e90c";
+}
+.icon-velocimetro-1:before {
+font-size: 35px;
+  content: "\e90d";
+}
+.icon-velocimetro:before {
+font-size: 35px;
+  content: "\e90e";
+}
+.icon-ritmo-1:before {
+font-size: 35px;
+  content: "\e90d";
+}
+.icon-ritmo:before {
+font-size: 35px;
+  content: "\e90e";
+}
+.icon-water:before {
+font-size: 35px;
+  content: "\e901";
+}
+.icon-thermometer-half:before {
+font-size: 35px;
+  content: "\e90f";
+}
+.icon-cloud-sun-rain:before {
+font-size: 35px;
   content: "\e900";
-  color:green;
-  font-size:40px;
-  
+}
+.icon-user-circle-o:before {
+font-size: 40px;
+color:green;
+  content: "\e91d";
 }
 .icon-user-circle:before {
-  content: "\e901";
+font-size: 35px;
+  content: "\e91e";
+}
+.icon-facebook2:before {
+font-size: 35px;
+  content: "\ea91";
+}
+.icon-instagram:before {
+font-size: 35px;
+  content: "\ea92";
+}
+.icon-twitter:before {
+
+font-size: 35px;
+  content: "\ea96";
 }
 

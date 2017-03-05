@@ -55,7 +55,10 @@ h2{
     width: 220px;
 
 }
-
+.preguntas{
+  width: 200px;
+  margin:0;
+}
 @media screen and (max-width: 1200px) {
 
   form{

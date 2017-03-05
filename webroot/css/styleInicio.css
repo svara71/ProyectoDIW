@@ -118,19 +118,35 @@ input
 {
     height: 300px;
     margin: 35px 35px 0 35px;
-
-    background: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
 }
-
+.slick-initialized .slick-slide {
+   display:flex; 
+}
+.box img{
+     display:inline; 
+}
+#movil{
+    margin-top: 20px;
+}
+#desc{
+    display: flex;
+    flex-direction: column;
+    margin-top:160px;
+}
 @media screen and (max-width: 700px)
 {
     #carrusel
     {
-        width: 450px;
+        width: 400px;
         height: 600px;
     }
     .box
     {
+
         height: 400px;
     }
 }
@@ -138,7 +154,7 @@ input
 {
     #carrusel
     {
-        width: 350px;
+       
         height: 600px;
     }
     .box
