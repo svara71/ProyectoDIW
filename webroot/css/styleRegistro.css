@@ -59,6 +59,10 @@ h2{
   width: 200px;
   margin:0;
 }
+#enviar{
+  margin-top: 150px;
+  margin-left: 10px;
+}
 @media screen and (max-width: 1200px) {
 
   form{

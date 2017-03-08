@@ -10,7 +10,7 @@
   					
 				  	responsive: [
 				    {
-				      breakpoint: 700,
+				      breakpoint: 900,
 				      settings: {
 				         dots: true,	
 						 infinite: false,
@@ -56,7 +56,7 @@
 				});			   
 	
 		 var map = new GMaps({
-				      el: '#mapa',
+				      div: '#mapa',
 				      lat: 42.001091,
 				      lng: -5.668193
 		});

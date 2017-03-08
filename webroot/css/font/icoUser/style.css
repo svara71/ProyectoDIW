@@ -27,10 +27,12 @@
 .icon-montanas:before {
   font-size: 35px;
   content: "\e902";
+  color:#FAAA63;
 }
 .icon-montana:before {
 font-size: 35px;
   content: "\e903";
+  color:#C2691A;
 }
 .icon-huellas-de-zapatos-humanos:before {
 font-size: 35px;
@@ -43,22 +45,27 @@ font-size: 35px;
 .icon-flechas-1:before {
 font-size: 35px;
   content: "\e906";
+  color:#50DBEF;
 }
 .icon-flechas:before {
 font-size: 35px;
   content: "\e907";
+  color:#50DBEF;
 }
 .icon-medico-1:before {
 font-size: 35px;
   content: "\e908";
+  color: #FF5256;
 }
 .icon-medico:before {
 font-size: 35px;
   content: "\e909";
+  color: #FF5256;
 }
 .icon-fuego:before {
 font-size: 35px;
   content: "\e90a";
+  color:#FF3F12;
 }
 .icon-distancia-para-viajar-entre-dos-puntos:before {
 font-size: 35px;
@@ -71,26 +78,32 @@ font-size: 35px;
 .icon-velocimetro-1:before {
 font-size: 35px;
   content: "\e90d";
+  color:#990CEC;
 }
 .icon-velocimetro:before {
 font-size: 35px;
   content: "\e90e";
+  color: #BA58F4;
 }
 .icon-ritmo-1:before {
 font-size: 35px;
   content: "\e90d";
+  color:#21F500;
 }
 .icon-ritmo:before {
 font-size: 35px;
   content: "\e90e";
+  color:#91FA81;
 }
 .icon-water:before {
 font-size: 35px;
   content: "\e901";
+  color:#1942E9;
 }
 .icon-thermometer-half:before {
 font-size: 35px;
   content: "\e90f";
+  color:#FF0D00;
 }
 .icon-cloud-sun-rain:before {
 font-size: 35px;
@@ -106,16 +119,16 @@ font-size: 35px;
   content: "\e91e";
 }
 .icon-facebook2:before {
-font-size: 35px;
+font-size: 20px;
   content: "\ea91";
 }
 .icon-instagram:before {
-font-size: 35px;
+font-size: 20px;
   content: "\ea92";
 }
 .icon-twitter:before {
 
-font-size: 35px;
+font-size: 20px;
   content: "\ea96";
 }
 

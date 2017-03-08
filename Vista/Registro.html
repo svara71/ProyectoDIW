@@ -34,22 +34,22 @@
 		<div id="contenido">
 			<div id="formulario">
 
-				<form  action="#" onsubmit="return validacion()">
+				<form  action="#" >
 				<div>
 					<div class="campo">	<span>Nombre</span><br/>
-					<input type="text" id="nombre" placeholder="Nombre" ></div>
+					<input type="text" id="nombre" placeholder="Nombre" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,48}" required></div>
 
 					<div class="campo">	<span>Apellido</span><br/>
-					<input type="text" id="apellido" placeholder="Apellidos" ></div>
+					<input type="text" id="apellido" placeholder="Apellidos" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,64}" required "></div>
 
 					<div class="campo">	<span>Usuario</span><br/>
-					<input type="text" id="user" placeholder="Usuario" ></div>
+					<input type="text" id="user" placeholder="Usuario"  pattern="^[a-z0-9]{5,15}$" required></div>
 
 					<div class="campo">	<span>Email</span><br/>
-					<input type="email" id="email" placeholder="Email" ></div>
+					<input type="email" id="email" placeholder="Email" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required></div>
 
 					<div class="campo">	<span>Contrase&ntilde;a</span><br/>
-					<input type="password" id="pass" placeholder="Contrase&ntilde;a" ></div>
+					<input type="password" id="pass" placeholder="Contrase&ntilde;a" pattern="[A-Za-z0-9!?-]{8,12}" required></div>
 
 					<div class="campo">	<span>Estatura</span><br/>
 					<input type="text" id="estatura" placeholder="Estatura" ></div>
@@ -113,13 +113,18 @@
 				            <input class="preguntas"  type="text" name="" placeholder="TIempo Completo"></div>
 				   		</div>
 				</div>
+				<input type="submit" id="enviar" value="Enviar">
 			</div>
+				
 			</form>
+
 			</div>
 
 		</div>
 		<footer>
 			<p>Documentacion</p>
+			<a href="../webroot/js/Calculadora/Calculadora.html">Calculadora</a>
+			<a href="../webroot/js/IndexedDB/IndexedDB.html">IndexedDB</a>
 		</footer>
 </body>
 </html>

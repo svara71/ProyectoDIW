@@ -8,8 +8,8 @@ function draw(){
  var canvas = document.getElementById('grafico'); 
         if (canvas.getContext){ 
           var ctx = canvas.getContext('2d'); 
-
-          ctx.beginPath(); 
+			
+            ctx.beginPath(); 
 			ctx.moveTo(50, 50); 
 			ctx.lineTo(50,350); 
 			ctx.lineTo(850,350); 

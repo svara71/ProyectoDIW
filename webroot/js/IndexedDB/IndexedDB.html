@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>IndexedDB</title>
+        <script type="text/javascript">
+
+                var IndexedDB=window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
+
+
+                function startDB(){
+                    dataBase = indexedDB.open("Prueba02",1);
+
+
+                    dataBase.onupgradeneeded = function (e){
+
+                        active = dataBase.result;
+                        prueba=active.createObjectStore("usuario",{keyPath: 'id',autoIncrement: true});
+
+                        prueba.createIndex('by_name','name', {unique: true});
+                        prueba.createIndex('by_apell','apell',{unique: false });
+                      
+                    };
+
+                      dataBase.onsuccess = function (e) {
+                    alert('Base de datos cargada correctamente');
+        
+                };
+        
+                dataBase.onerror = function (e)  {
+                    alert('Error cargando la base de datos');
+                };
+            }
+                
+
+            function add() {
+
+                        var active = dataBase.result;
+                        var data = active.transaction(["usuario"], "readwrite");
+                        var object = data.objectStore("usuario");
+
+                        var request = object.put({
+                            name: document.querySelector("#name").value,
+                            apell: document.querySelector("#apell").value
+                        });
+
+                        request.onerror = function (e) {
+                            alert(request.error.name + '\n\n' + request.error.message);
+                        };
+
+                        data.oncomplete = function (e) {
+                          
+                            document.querySelector('#name').value = '';
+                            document.querySelector('#apell').value = '';
+                            alert('Usuario añadido correctamente');
+                            loadAll();
+                        };
+                    }
+
+             function loadAll() {
+
+                var active = dataBase.result;
+                var data = active.transaction(["usuario"], "readonly");
+                var object = data.objectStore("usuario");
+
+                var elements = [];
+
+                object.openCursor().onsuccess = function (e) {
+
+                    var result = e.target.result;
+
+                    if (result === null) {
+                        return;
+                    }
+
+                    elements.push(result.value);
+                    result.continue();
+
+                };
+
+                data.oncomplete = function () {
+
+                    var outerHTML = '';
+
+                    for (var key in elements) {
+
+                        outerHTML += '\n\
+                        <tr>\n\
+                            <td>' + elements[key].name + '</td>\n\
+                            <td>' + elements[key].apell + '</td>\n\
+                        </tr>';
+
+                    }
+
+                    elements = [];
+                    document.querySelector("#elementsList").innerHTML = outerHTML;
+                };
+
+            }
+
+        </script>
+    </head>
+    <body onload="startDB();">
+        
+        <form action="#">
+            Nombre:
+            <input type="text" id="name">
+            Apellido:
+            <input type="text" id="apell">
+            <button type="button" onclick="add();">Guardar</button>
+        </form>
+    <br/>
+          <div id="elements">
+            <table>
+                <caption>Usuario</caption>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th> </th>
+                    </tr>
+                </thead>
+                <tbody id="elementsList">
+                    <tr>
+                        <td colspan="3">No hay elementos para mostrar</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div> 
+          
+    </body>
+</html>

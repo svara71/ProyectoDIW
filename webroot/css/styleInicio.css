@@ -1,9 +1,15 @@
 #contenido
 {
     display: flex;
+    justify-content: space-around;
 
+    flex-direction: row-reverse;
     width: 100%;
-    height: 1250px;
+    height: 460px;
+    margin-top: 150px;
+}
+header{
+    margin-bottom: 100px;
 }
 #sesion
 {
@@ -92,26 +98,20 @@ input
 
 #registro
 {
-    position: absolute;
-    top: 300px;
-    right: 20%;
-
+  
     width: 300px;
     height: 300px;
-
     text-align: center;
+  
 }
 
 #carrusel
 {
-    position: absolute;
-    top: 700px;
-    left: 50%;
 
     width: 600px;
     height: 400px;
 
-    transform: translateX(-50%);
+   
 }
 
 .box
@@ -137,10 +137,20 @@ input
     flex-direction: column;
     margin-top:160px;
 }
-@media screen and (max-width: 700px)
+@media (max-width: 900px)
 {
+    #contenido{
+        height: 700px;
+        flex-direction: column;
+       
+
+
+    }
     #carrusel
     {
+
+        
+
         width: 400px;
         height: 600px;
     }
@@ -152,10 +162,15 @@ input
 }
 @media screen and (max-device-height: 800px)
 {
+     #contenido{
+        flex-direction: column;
+        flex:1 1 auto;
+    }
     #carrusel
     {
-       
-        height: 600px;
+       position:absolute;
+       left:50%;
+       height: 600px;
     }
     .box
     {

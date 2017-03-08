@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		#pantalla{
+			width: 208px;
+			height: 40px;
+
+			}
+
+		.boton{
+			width: 50px;
+			height: 25px;
+			}
+		
+		.botonIgual{
+			width: 104px;
+			height: 25px;
+			}
+		
+	</style>
+	<script type="text/javascript" src="calculadora.js"></script>
+</head>
+<body>
+	<div class="calculadora">
+
+		<form action="#" name="calculadora" id="calculadora">
+			<p id="textopantalla">0</p>
+
+			<p>
+				<input class="boton" type="button" onclick="borrarTodo()"  value="CE" />
+				<input class="boton" type="button" onclick="borrarNum()"  value="C" />
+				
+				<input class="boton" type="button" onclick="signo('/')"  value="/" />
+				<input class="boton" type="button" onclick="signo('*')"  value="*" />
+				
+			</p>
+
+			<p>
+				<input class="boton" type="button" onclick="numero('7')"  value="7" />
+				<input class="boton" type="button" onclick="numero('8')"  value="8" />
+				<input class="boton" type="button" onclick="numero('9')"  value="9" />
+				<input class="boton" type="button" onclick="signo('+')"  value="+" />
+			</p>
+
+			<p>
+				<input class="boton" type="button" onclick="numero('4')"  value="4" />
+				<input class="boton" type="button" onclick="numero('5')"  value="5" />
+				<input class="boton" type="button" onclick="numero('6')"  value="6" />
+				<input class="boton" type="button" onclick="signo('-')"  value="-" />
+				
+			</p>
+
+			<p>
+				<input class="boton" type="button" onclick="numero('1')"  value="1" />
+				<input class="boton" type="button" onclick="numero('2')"  value="2" />
+				<input class="boton" type="button" onclick="numero('3')"  value="3" />
+				<input class="boton" type="button" onclick="signo('%')"  value="%" />
+			</p>
+
+			<p>
+				<input class="boton" type="button" onclick="numero('0')"  value="0" />
+				<input class="botonIgual" type="button" onclick="igual()"  value="="/>
+				<input class="boton" type="button" onclick="numero('.')"  value="." />
+			</p>
+
+		</form>
+	</div>
+</body>
+</html>
+
+
